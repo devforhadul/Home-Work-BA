@@ -9,7 +9,7 @@ import android.view.View;
 
 public class MainActivity extends AppCompatActivity {
 
-    CardView hw203;
+    CardView hw203, hw204;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -17,6 +17,7 @@ public class MainActivity extends AppCompatActivity {
         setContentView(R.layout.activity_main);
 
         hw203 = findViewById(R.id.hw203);
+        hw204 = findViewById(R.id.hw204);
 
         /*=======================================*/
 
@@ -41,6 +42,17 @@ public class MainActivity extends AppCompatActivity {
 
             }
         });
+
+        hw204.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+
+                Intent myint =  new Intent(MainActivity.this, Profit_calculate204.class);
+                startActivity(myint);
+
+            }
+        });
+
 
     }
 

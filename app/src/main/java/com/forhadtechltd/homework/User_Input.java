@@ -7,6 +7,7 @@ import android.content.Intent;
 import android.os.Bundle;
 import android.text.TextUtils;
 import android.view.View;
+import android.view.inputmethod.EditorInfo;
 import android.widget.Button;
 import android.widget.EditText;
 import android.widget.TextView;
@@ -48,20 +49,29 @@ public class User_Input extends AppCompatActivity {
 
                 if ( ipname.getText().toString().isEmpty() ){
                     ipname.setError("Invalid input");
+
                     if (ipphone.getText().toString().isEmpty() | ipphone.getText().toString().length() >11 | ipphone.getText().toString().length() <10 ){
                         ipphone.setError("Invalid input");
-                    }if (ipemail.getText().toString().isEmpty() | ipemail.getText().toString().matches("@") ){
+
+                    }
+                    if (ipemail.getText().toString().isEmpty() | ipemail.getText().toString().matches("@") ){
                         ipemail.setError("Invalid input");
-                    }if (ippassword.getText().toString().isEmpty() | ippassword.getText().toString().length() <6){
+
+                    }
+                    if (ippassword.getText().toString().isEmpty() | ippassword.getText().toString().length() <6){
                         ippassword.setError("Invalid input");
-                    }if (ipconfirmpassword.getText().toString().isEmpty() | ipconfirmpassword.getText().toString().length() <6){
+
+                    }
+                    if (ipconfirmpassword.getText().toString().isEmpty() | ipconfirmpassword.getText().toString().length() <6){
                         ipconfirmpassword.setError("Invalid input");
+
                     }
 
                     return;
                 }
 
 
+                ipconfirmpassword.onEditorAction(EditorInfo.IME_ACTION_DONE);
 
    /*             if(TextUtils.isEmpty(name)) {
                     ipname.setError("Your message");
