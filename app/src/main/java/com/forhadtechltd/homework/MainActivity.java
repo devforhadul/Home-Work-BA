@@ -21,6 +21,9 @@ public class MainActivity extends AppCompatActivity {
         /*=======================================*/
 
 
+
+
+
         intent(); // for go new activity
 
 
