@@ -1,0 +1,76 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:layout_margin="5dp"
+    >
+
+    <LinearLayout
+        android:id="@+id/itemLay"
+        android:layout_width="match_parent"
+        android:layout_height="120dp"
+        android:orientation="horizontal"
+        android:weightSum="100"
+        android:background="@drawable/item_bg"
+        android:layout_margin="10dp"
+        >
+
+        <ImageView
+            android:id="@+id/img"
+            android:layout_width="200dp"
+            android:layout_height="match_parent"
+            android:layout_weight="30"
+            android:src="@drawable/forhad_img"
+            />
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_weight="70"
+            android:orientation="vertical"
+            android:weightSum="100">
+
+            <TextView
+                android:id="@+id/name"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Forhadul Islam"
+                android:textSize="20dp"
+                android:textStyle="bold"
+                android:layout_marginLeft="10dp"
+                android:gravity="left|bottom"
+                android:layout_weight="33.33"/>
+
+            <TextView
+                android:id="@+id/phone"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="+8801984839526"
+                android:textSize="20dp"
+                android:textStyle="normal"
+                android:layout_marginLeft="10dp"
+                android:gravity="left|center"
+                android:layout_weight="33.33"/>
+
+            <TextView
+                android:id="@+id/email"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="forhadul75@gmail.com"
+                android:textSize="15dp"
+
+                android:layout_marginLeft="10dp"
+                android:gravity="left"
+                android:layout_weight="33.33"/>
+
+
+
+        </LinearLayout>
+
+
+
+    </LinearLayout>
+
+
+</LinearLayout>

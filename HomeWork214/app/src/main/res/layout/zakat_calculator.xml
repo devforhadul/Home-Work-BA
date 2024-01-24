@@ -1,0 +1,82 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".Zakat_Calculator"
+    android:orientation="vertical"
+    >
+    <LinearLayout
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:weightSum="2"
+        android:layout_margin="15dp"
+        >
+        <TextView
+            android:layout_weight="1"
+            android:layout_width="fill_parent"
+            android:layout_height="match_parent"
+            android:text="আাপনার মোট সম্পওির পরিমাণ: "
+            android:textSize="14dp"
+            android:gravity="center"
+            android:textStyle="bold"
+            />
+        <EditText
+            android:id="@+id/property"
+            android:layout_weight="1"
+            android:layout_width="fill_parent"
+            android:layout_height="match_parent"
+            android:hint="মোট সম্পওি পরিমাণ লিখুন"
+            android:inputType="numberDecimal"
+            />
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:weightSum="2"
+        android:layout_margin="15dp"
+        >
+        <TextView
+            android:layout_weight="1"
+            android:layout_width="fill_parent"
+            android:layout_height="match_parent"
+            android:text="আাপনার মোট নগদ টাকার পরিমাণ: "
+            android:textSize="14dp"
+            android:gravity="center"
+            android:textStyle="bold"
+            />
+        <EditText
+            android:id="@+id/money"
+            android:layout_weight="1"
+            android:layout_width="fill_parent"
+            android:layout_height="match_parent"
+            android:hint="মোট নগদ টাকার পরিমাণ লিখুন"
+            android:inputType="numberDecimal"
+            />
+
+    </LinearLayout>
+
+    <Button
+        android:id="@+id/calBtn"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Zakat Calculate"
+        />
+
+    <TextView
+        android:id="@+id/display"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Click Calculate Button!!"
+        android:gravity="center"
+        android:layout_marginTop="10dp"
+        />
+
+
+
+</LinearLayout>

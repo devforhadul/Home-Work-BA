@@ -1,0 +1,87 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".Item_Details"
+    >
+    
+    <RelativeLayout
+        android:id="@+id/cover"
+        android:layout_width="match_parent"
+        android:layout_height="200dp"
+        >
+
+        <ImageView
+            android:id="@+id/tvImg"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:src="@drawable/shakib_photo"
+            android:scaleType="centerCrop"
+            />
+        <TextView
+            android:id="@+id/tvTitle"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="মিরপুরে সাকিব: এটা কিন্তু রাজনীতির মাঠ নয়"
+            android:layout_alignParentBottom="true"
+            android:gravity="center"
+            android:textColor="@color/white"
+            android:textSize="16dp"
+            android:maxLines="2"
+            android:ellipsize="end"
+            android:textStyle="bold"
+            android:padding="10dp"
+            android:background="#85000000"
+            />
+
+    </RelativeLayout>
+
+    <ScrollView
+        android:layout_below="@+id/cover"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        >
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            >
+
+
+            <TextView
+                android:id="@+id/artical"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="মিবরগুনা সদর উপজেলার পরীরখাল মাধ্যমিক বিদ্যালয় ভোটকেন্দ্রে জাল ভোট দেওয়ার দায়ে সাবেত হোসাইন (১৮) নামের এক তরুণকে ছয় মাসের কারাদণ্ড দিয়েছেন ভ্রাম্যমাণ আদালত। আজ রোববার সকাল ১০টার দিকে ভ্রাম্যমাণ আদালতের নির্বাহী ম্যাজিস্ট্রেট আবু সালেহ মো. আরমান ভূঁইয়া এ দণ্ডাদেশ দেন। সাবেত হোসাইন পরীরখাল এলাকার বাসিন্দা সগীর হোসেনের ছেলে।\n
+            বরগুনা সদর উপজেলা নির্বাহী কর্মকর্তা (ইউএনও) মো. শামীম মিঞা প্রথম আলোকে বলেন, সদর উপজেলার এম বালিয়াতলী ইউনিয়নের ভোটকেন্দ্র পরীরখাল মাধ্যমিক "
+                android:layout_alignParentBottom="true"
+                android:textColor="@color/black"
+                android:textSize="16dp"
+                android:padding="10dp"
+                />
+
+
+
+        </LinearLayout>
+    </ScrollView>
+    
+    <com.google.android.material.floatingactionbutton.FloatingActionButton
+        android:id="@+id/fab"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:backgroundTint="#FF9800"
+        android:layout_alignParentBottom="true"
+        android:layout_alignParentRight="true"
+        android:layout_margin="15dp"
+        android:src="@drawable/voice_icon"
+        app:rippleColor="@color/black"
+        android:clickable="true"
+        android:foreground="?attr/selectableItemBackground"
+        >
+
+    </com.google.android.material.floatingactionbutton.FloatingActionButton>
+
+
+
+</RelativeLayout>

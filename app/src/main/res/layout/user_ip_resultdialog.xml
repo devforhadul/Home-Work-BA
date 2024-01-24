@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:orientation="vertical"
+    >
+
+
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:text="Coming Soon.."
+        android:fontFamily="sans-serif"
+        android:textSize="30dp"
+        android:textColor="#000"
+        android:textStyle="bold"
+        android:layout_marginVertical="5dp"
+        android:gravity="center"
+        android:layout_margin="10dp"
+        />
+
+
+
+
+
+</LinearLayout>

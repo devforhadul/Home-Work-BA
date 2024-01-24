@@ -1,0 +1,182 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#efefef"
+    android:orientation="vertical"
+    tools:context=".Feni_Home"
+
+    >
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="45dp"
+
+        android:orientation="horizontal"
+        android:weightSum="100">
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:layout_weight="25"
+            android:orientation="vertical">
+
+            <ImageView
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:layout_gravity="left"
+                android:padding="5dp"
+                android:src="@drawable/menu" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:layout_weight="50"
+            android:orientation="vertical">
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_gravity="center"
+                android:gravity="center"
+                android:text="FENI Online Seba"
+                android:textColor="#000"
+                android:textSize="25dp"
+                android:textStyle="bold"
+                android:padding="5dp"/>
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:layout_weight="25"
+            android:orientation="vertical">
+
+            <ImageView
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_gravity="center"
+                android:padding="15dp"
+                android:src="@drawable/notifi"
+                />
+        </LinearLayout>
+        <!--top lini-->
+    </LinearLayout>
+    <!--finish top lini-->
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="40dp"
+
+        android:orientation="horizontal">
+
+        <LinearLayout
+            android:layout_width="100dp"
+            android:layout_height="match_parent"
+            >
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:gravity="center"
+                android:text="Headline"
+                android:textColor="#ff0000"
+                android:textSize="20dp"
+                android:textStyle="bold"
+                android:background="#4CAF50"/>
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="horizontal">
+
+            <TextView
+                android:id="@+id/marqueeText"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:ellipsize="marquee"
+                android:marqueeRepeatLimit="marquee_forever"
+                android:padding="10dp"
+                android:scrollHorizontally="true"
+                android:singleLine="true"
+                android:text="মন্ত্রিপরিষদ সচিব মো. মাহবুব বলেন, মন্ত্রী হচ্ছেন- আ ক ম মোজাম্মেল হক, ওবায়দুল কাদের, নূরুল মজিদ মাহমুদ হুমায়ূন, আসাদুজ্জামান খান কামাল, দীপু মনি, তাজুল ইসলাম, ফারুক খান, আবুল হাসান মাহমুদ আলী, আনিসুল হক, হাছান মাহমুদ, আবদুস শহীদ, সাধন চন্দ্র মজুমদার, র আ ম উবায়দুল মোক্তাদির চৌধুরী, আব্দুর রহমান, নারায়ণ চন্দ্র চন্দ, আব্দুস সালাম, মহিবুল হাসান চৌধুরী নওফেল, ফরহাদ হোসেন, ফরিদুল হক খান, জিল্লুল হাকিম, সাবের হোসেন চৌধুরী, জাহাঙ্গীর কবির নানক, নাজমুল হাসান পাপন, ইয়াফেস ওসমান এবং সামন্ত লাল সেন।"
+                android:textSize="17sp"
+                android:textColor="#4CAF50"
+                android:textStyle="bold" />
+        </LinearLayout>
+
+    </LinearLayout>
+    <!--finish heading lini-->
+
+<!--    <ScrollView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        >
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            >-->
+
+
+    <com.denzcoskun.imageslider.ImageSlider
+        android:id="@+id/image_slider"
+        android:layout_width="wrap_content"
+        android:layout_height="180dp"
+        app:iss_auto_cycle="true"
+        app:iss_delay="1000"
+        app:iss_period="1000"
+        app:iss_text_align="CENTER"
+
+        />
+    <!--finish imgSlider-->
+
+    <soup.neumorphism.NeumorphCardView
+        android:layout_width="match_parent"
+        android:layout_height="70dp"
+        android:layout_marginTop="10dp"
+        >
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:text="Emergency Service"
+            android:textColor="#000000"
+            android:textSize="15dp"
+            android:gravity="center"
+            android:textStyle="bold"
+            />
+
+    </soup.neumorphism.NeumorphCardView>
+    <!--finish service title-->
+
+    <GridView
+        android:id="@+id/gridView"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:numColumns="2"
+        android:clickable="false"
+
+
+        />
+
+
+
+
+    <!--
+
+    </LinearLayout>
+        </ScrollView>
+
+    -->
+
+
+
+
+
+
+    <!--finish main lini-->
+</LinearLayout>

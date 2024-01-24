@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".TextToVoice"
+    android:orientation="vertical"
+    >
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Text to Voice"
+        android:textSize="30dp"
+        android:gravity="center"
+        android:layout_marginTop="10dp"
+        android:background="#FFFF00"
+        android:textStyle="bold"
+        />
+    <EditText
+        android:id="@+id/edTxt"
+        android:layout_width="match_parent"
+        android:layout_height="150dp"
+        android:background="#F8F8FF"
+        android:layout_marginTop="20dp"
+        android:hint="Type Any Text..."
+        android:inputType="text"
+        />
+    <Button
+        android:id="@+id/btnconv"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Text to Voice Convert"
+        android:layout_marginHorizontal="20dp"
+        android:layout_marginTop="10dp"
+        />
+
+
+</LinearLayout>

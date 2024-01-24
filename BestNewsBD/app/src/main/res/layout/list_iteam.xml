@@ -1,0 +1,91 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+
+    <LinearLayout
+        android:id="@+id/layItem"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:clickable="true"
+
+        >
+
+        <soup.neumorphism.NeumorphCardView
+            android:layout_width="match_parent"
+            android:layout_height="150dp"
+
+            >
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:padding="10dp"
+                >
+
+                <ImageView
+                    android:id="@+id/image"
+                    android:layout_width="150dp"
+                    android:layout_height="match_parent"
+                    android:scaleType="centerCrop"
+                    android:src="@drawable/shakib_photo" />
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_marginLeft="5dp"
+                    android:orientation="vertical">
+
+                    <TextView
+                        android:id="@+id/cat"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:background="#f2f2"
+                        android:ellipsize="end"
+                        android:maxLines="2"
+                        android:paddingHorizontal="10dp"
+                        android:paddingVertical="3dp"
+                        android:text="Cricket"
+                        android:textSize="15sp"
+                        android:textStyle="bold"
+
+                        />
+
+                    <TextView
+                        android:id="@+id/title"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="5dp"
+                        android:ellipsize="end"
+                        android:text="মিরপুরে সাকিব: এটা কিন্তু রাজনীতির মাঠ নয়"
+                        android:textSize="18sp"
+                        android:textStyle="bold" />
+
+                    <TextView
+                        android:id="@+id/des"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="5dp"
+                        android:ellipsize="end"
+                        android:maxLines="2"
+                        android:text="খবরটা ছড়িয়ে পড়ার পরই মিরপুর শেরেবাংলা স্টেডিয়ামের মাঠকর্মীদের মধ্যে ব্যস্ততা বেড়ে গেল। একজন ফোনে যোগাযোগ করে ফুলের ব্যবস্থা করলেন। আরেকজন মাঠকর্মীদের ডেকে নিয়ে যান মিরপুর স্টেডিয়ামের ইনডোরে। সেখানে গত ৬ নভেম্বর শ্রীলঙ্কার বিপক্ষে বিশ্বকাপের ম্যাচের পর আজ প্রথম ব্যাটিং অনুশীলনে নেমেছিলেন সাকিব আল হাসান।
+এর মধ্যে সাকিবের জীবনে যে বিরাট বড় বাঁকবদল ঘটেছে, তা সবারই জানা। গতকালই জাতীয় সংসদ নির্বাচনে মাগুরা–১ আসন থেকে সংসদ সদস্য নির্বাচিত হয়েছেন সাকিব। রাতেই মাগুরা থেকে রওনা দিয়ে আজই মিরপুরে হাজির এই তারকা অলরাউন্ডার। সে জন্যই সাকিবকে নতুন করে বরণ করে নেওয়ার প্রস্তুতি নিচ্ছিলেন মাঠকর্মীরা।"
+                        android:textColor="@color/black"
+                        android:textSize="15sp"
+                        android:textStyle="normal" />
+
+
+                </LinearLayout>
+
+
+            </LinearLayout>
+
+
+        </soup.neumorphism.NeumorphCardView>
+
+    </LinearLayout>
+
+</LinearLayout>
